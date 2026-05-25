@@ -60,6 +60,8 @@ import { useState } from 'react';
 function App() {
 
   const [count,setCount] = useState(0);
+  const [name,setName] = useState("");
+  const [role,setRole] = useState("");
 
     return (
         <div>
@@ -69,14 +71,32 @@ function App() {
             <Profile Name="Rahul" Role="Backend Developer" />
             <Profile Name="Sneha" Role="Data Scientist" /> */}
 
-            <h2>{count}</h2>
+            {/* <h2>{count}</h2> */}
 
-            <button onClick={() =>  setCount(count + 1)}> Increase </button>
+            {/* <button onClick={() =>  setCount(count + 1)}> Increase </button>
             <button onClick={() => { if (count > 0){
                 setCount(count - 1);
             }
             }}> Decrease </button>
-            <button onClick={() => setCount(0)}> Reset </button>
+            <button onClick={() => setCount(0)}> Reset </button> */}
+
+            <input type="text" value={name} placeholder='Enter Name:' onChange={(e) => { setName(e.target.value); setCount(count+1)}} />
+
+            <br />
+            <br />
+
+
+            <input type="text"  value={role} placeholder='Enter Role:' onChange={(e) => {setRole(e.target.value); setCount(count+1)}} />
+
+             <h3>Name: {name}</h3>
+            <h3>Character Count: {name.length}</h3>
+
+            <h3>Role: {role}</h3>
+            <h3> ROLE Character Count: {role.length}</h3>
+
+
+
+
 
         </div>
     );
