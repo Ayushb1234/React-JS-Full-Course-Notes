@@ -1,5 +1,8 @@
+# Dependencies
+node_modules/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +10,31 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Environment and local overrides
+.env
+.env.*
+!.env.example
 *.local
 
-# Editor directories and files
+# Build output and tool caches
+dist/
+dist-ssr/
+coverage/
+.vite/
+.vite-temp/
+.eslintcache
+
+# Editor files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS files
+Thumbs.db
+Desktop.ini
