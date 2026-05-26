@@ -171,6 +171,7 @@
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import TODO from "./components/todoapp";
 
 import ThemeProvider from "./context/ThemeContext";
 
@@ -178,13 +179,14 @@ function App() {
 
   return (
 
-    <ThemeProvider>
+    // <ThemeProvider>
 
-      <Navbar />
+    //   <Navbar />
 
-      <Home />
+    //   <Home />
 
-    </ThemeProvider>
+    // </ThemeProvider>
+    <TODO />
 
   );
 }
