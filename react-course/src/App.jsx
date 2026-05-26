@@ -54,6 +54,7 @@
 
 import { useState } from 'react';
 import Skill from "./components/map&list";
+import Fetch from "./components/userfetchapp";
 // import { Welcome, Profile } from './components/profile';
 
 
@@ -95,7 +96,8 @@ function App() {
             <h3>Role: {role}</h3>
             <h3> ROLE Character Count: {role.length}</h3> */}
 
-            <Skill />
+            {/* <Skill /> */}
+            <Fetch />
 
 
 
